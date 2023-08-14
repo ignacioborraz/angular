@@ -1,0 +1,65 @@
+.box {
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  overflow: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+.form input {
+  margin: 5px 0;
+}
+
+.list-item {
+  width: 200px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding-left: 10px;
+  border: 1px solid red;
+}
+
+.delete {
+  display: flex;
+  color: white;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-color {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 50px;
+  margin: auto;
+}
+
+.bold {
+  font-weight: 1000;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  background-color: aqua;
+}

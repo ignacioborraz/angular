@@ -1,0 +1,24 @@
+<div class="data-user">
+  <p *ngIf="lastName !== ''; else elseLastName">{{ lastName }}</p>
+  <ng-template #elseLastName>
+    <p>Please type!</p>
+  </ng-template>
+  <p *ngIf="name !== ''; else elseName">{{ name }}</p>
+  <ng-template #elseName>
+    <p>Please type!</p>
+  </ng-template>
+  <p *ngIf="age !== 0; else elseAge">{{ age }}</p>
+  <ng-template #elseAge>
+    <p>Please type!</p>
+  </ng-template>
+  <img
+    width="30"
+    [src]="photo"
+    alt="{{ photo }}"
+    *ngIf="photo; else elsePhoto"
+    (error)="isValidPhoto()"
+  />
+  <ng-template #elsePhoto>
+    <p>It will use default photo!</p>
+  </ng-template>
+</div>

@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  width: 100%;
+}
+
+.form-user {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input {
+  margin: 2px;
+  padding: 2px;
+}

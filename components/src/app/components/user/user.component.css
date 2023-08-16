@@ -1,0 +1,13 @@
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}

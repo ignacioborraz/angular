@@ -1,0 +1,8 @@
+<article>
+  <p>{{user.name}}</p>
+  <p>{{user.lastName}}</p>
+  <p>{{user.age}}</p>
+  <img width="200" [src]='user.photo' [alt]="user.name" />
+  <span>{{counter}}</span>
+  <button type="button" (click)="addToFavs()">AGREGAR A FAVORITOS</button>
+</article>

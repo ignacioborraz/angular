@@ -1,7 +1,36 @@
+<app-header class="app-header" [favorites]="favorites"/>
+
 <h1>INSERTAR COMPONENTE</h1>
-<app-title />
+<app-title></app-title>
 <app-img></app-img>
 <p>utilizando la etiqueta definida en el decorador del componente</p>
 
+<br /><br />
+<hr />
+<h1>MANEJO DE INPUTS (entradas)</h1>
+<app-form></app-form>
 
-<br><br><hr>
+<br /><br />
+<hr />
+<h1>MANEJO DE OUTPUTS (salidas)</h1>
+<app-form (sendTofather)="changeUser($event)" />
+
+<br /><br />
+<hr />
+<h1>DESMONTAJE DE COMPONENTES</h1>
+<section>
+  <button type="button" (click)="showUsers()">
+    {{ show ? "ocultar" : "mostrar" }}
+  </button>
+  <app-user *ngIf="show" [user]="user" />
+</section>
+
+<br /><br />
+<hr />
+<h1>DESCOMPOSICION</h1>
+<app-users (toFavs)="addToFavs($event)" />
+
+<br /><br />
+<hr />
+<h1>SERVICIOS</h1>
+<app-products />

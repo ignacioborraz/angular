@@ -1,0 +1,12 @@
+.data-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+p {
+  margin: 2px;
+  padding: 2px;
+  width: 100%;
+  color: red
+}

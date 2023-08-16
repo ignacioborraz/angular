@@ -1,0 +1,8 @@
+<section>
+  {{quantity}}
+  <p>{{product.title | uppercase}}</p>
+  <p>{{product.price | currency:'USD'}}</p>
+  <p>{{product.description}}</p>
+  <img width="200" [src]='product.image' [alt]='product.title'/>
+  <button appHighlight type="button" (click)='addToStore()'>AGREGAR A CARRITO</button>
+</section>

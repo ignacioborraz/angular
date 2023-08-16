@@ -1,0 +1,40 @@
+<section>
+  <form class="form-user">
+    <input
+      type="text"
+      placeholder="Type your Last Name"
+      id="lastName"
+      name="lastName"
+      [(ngModel)]="user.lastName"
+    />
+    <input
+      type="text"
+      placeholder="Type your Name"
+      id="name"
+      name="name"
+      [(ngModel)]="user.name"
+    />
+    <input
+      type="number"
+      placeholder="Type your Age"
+      id="age"
+      name="age"
+      [(ngModel)]="user.age"
+    />
+    <input
+      type="text"
+      placeholder="Type your Photo URL"
+      id="photo"
+      name="photo"
+      [(ngModel)]="user.photo"
+    />
+    <button type="button" (click)="sendTo()">ADD</button>
+  </form>
+  <app-data
+    [lastName]="user.lastName"
+    [name]="user.name"
+    [age]="user.age"
+    [photo]="user.photo"
+    (sendDefaultPhoto)="changePhoto($event)"
+  />
+</section>

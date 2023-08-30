@@ -1,7 +1,8 @@
 <section>
   <p>{{product.title | uppercase}}</p>
   <p>{{product.price | currency:'USD'}}</p>
+  <p>{{product.description}}</p>
   <img width="200" [src]='product.image' [alt]='product.title'/>
-  <a routerLink='/product/{{product.id}}'>DETALLES</a>
   <button appHighlight type="button" (click)='addToStore()'>AGREGAR A CARRITO</button>
+  <button type="button" (click)="toBack()">VOLVER</button>
 </section>

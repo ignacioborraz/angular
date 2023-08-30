@@ -17,6 +17,14 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { NewComponentComponent } from './pages/new-component/new-component.component';
+import { InputsComponent } from './pages/inputs/inputs.component';
+import { OutputsComponent } from './pages/outputs/outputs.component';
+import { DescomposingComponent } from './pages/descomposing/descomposing.component';
+import { IndexComponent } from './pages/index/index.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
+import { IgnaComponent } from './pages/igna/igna.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +40,15 @@ import { HighlightDirective } from './directives/highlight.directive';
     ProductComponent,
     ProductsComponent,
     ReversePipe,
-    HighlightDirective
+    HighlightDirective,
+    NewComponentComponent,
+    InputsComponent,
+    OutputsComponent,
+    DescomposingComponent,
+    IndexComponent,
+    ProductDetailComponent,
+    UserDetailComponent,
+    IgnaComponent
   ],
   imports: [
     BrowserModule,

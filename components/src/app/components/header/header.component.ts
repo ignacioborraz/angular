@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   handleMenu() {
     this.show = !this.show
   }
-  @Input() favorites: User[] = []
+  @Input() favourites: User[] = []
   productsInCart: Product[] = []
   counter = 0
   constructor(private storeService : StoreService) { }

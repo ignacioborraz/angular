@@ -1,4 +1,4 @@
-export interface Link {
+export interface Anchor {
   to: string,
   name: string,
   color: string,

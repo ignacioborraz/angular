@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Social } from 'src/app/models/social.model';
-import { Link } from 'src/app/models/link.model';
-import { Login } from 'src/app/models/login';
+import { Anchor } from 'src/app/models/anchor.model';
+import { Login } from 'src/app/models/login.model';
 
 @Component({
   selector: 'app-login',
@@ -14,15 +14,15 @@ export class LoginComponent {
     { name: 'Continuar con Apple', photo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaFJREFUSEu11T9IlWEUBvCfVhpYFE2ZQkRQkUsmQaMEhdIQFUHYGCGNDQ1hEETRJri1BBE0CBoVJYJDi0HQIkHQn61AGoKiISKU4sR74+J97/347vWe8eM9z3PO85xzvg5tjo4241tPgs04gqM4gItRfBFBF47jNIawC9vwGcv4g27sxs4qvBVsKiI4hyn0NinjRqzmOoiK7uFCk8CRFp111uvgLsZbAI/UH0nKGg/2410d8J9YTMmD2NugiPfJ6BqCK5hck/gKd9K3SxhB6NsonuJUTqJZnEmZv3ENc3iIwyVku4kbOYIXGMYvHEMPHmFrCfB4egILOYLXad6jiyW8aQL8K/oQCtR48AQfcBWVbkoW7zauV5LW7sEYHuMQXpZFTtLuwZd6BJXv1WaX4Qljw+D/kdvkLfiODWWQEfLGzYotbkhwEs9Kgj9A7Mg/Y4sIbmECMQ07KjelDuEnXE67kn2Sk2gGZ9Mk3cd5DKC/amTDxGk8z1Vd1MFbHMQo5ktKVfM818E3bMc+fGwHwWrSPc5EXNCWouiX2RJ4JLed4C/bHEMZXsl2vwAAAABJRU5ErkJggg==' },
     { name: 'Continuar con Slack', photo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgdJREFUSEu11EnIjWEUB/DfZ1ZKigxLkkhkocg8RRFbC2zMCzthpyTjCgssCFnYSJmKzCshlAUbw86wECVJSEfnfj337X73rZvv2by953nO+f/P/wxdevl09XJ8dQDjcRzTcAXrk9BprMATbMa7nojWAZzFusJ5CfrjemE7ga3/C2BHBjpUBLyDRZ0CTMB9jMwAO/N7sAh4Fws7BQi/gZiOfniN1egog0nYmAWtEvqKSziD7ThcPLiNxZiJLfiMk3gVb8oi38O8mradimWoSrQS7zEk/W8hGqIJ4BNG1ACEPANwrnh3EXvxrLAF2JgqwH7sagMQBMYlqTcYjt/J9AueFr57sLsKEP8zUoIqTjCKmfiRF4OxBg/xAqNS/7i+hseNAGUNBmFpUeQYoA+YnbareJuOY7EKQ1tkHFLdaJApAULXtYVDrIe5OJK2PylLtG1k1O7EKvm3VkqAaK9hhVd0zD4sL2xBoE/K1Q7gY8rWBPAAc9Ir+n506rmgiBSTHKuhW+MeULqnu8xgMjZhSjK/iRiicg3ELoohi/Sj91vV4HkO2stWXVQl1ArgQrbrLzzCz3Za1a3rVgARr7GLvmWNQt6Wpw4gtJxfqUH4HChs5yvd1wRUB3AU2wqP2EN9s/gN8yls6DSDiTiWg3a5CBRbNYr8HbMQq6MjiWrmqf66TqL6CDUv/gKbWWIZD0WWYQAAAABJRU5ErkJggg==' },
   ]
-  links: Link[] = [
-    { name: 'Plantillas', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Precios', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Aplicaciones', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Trabajos', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Blog', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Desarrolladores', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Acerca de', to: '', color: 'text-gray-600', size: '12px' },
-    { name: 'Ayuda', to: '', color: 'text-gray-600', size: '12px' }
+  links: Anchor[] = [
+    { name: 'Plantillas', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Precios', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Aplicaciones', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Trabajos', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Blog', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Desarrolladores', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Acerca de', to: '', color: 'text-secondary', size: '12px' },
+    { name: 'Ayuda', to: '', color: 'text-secondary', size: '12px' }
   ]
   user_login: Login = { email: '', password: '' }
   capture_data() {

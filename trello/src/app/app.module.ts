@@ -9,6 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { UnderLinkComponent } from './components/under-link/under-link.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { BoardsComponent } from './pages/boards/boards.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     IndexComponent,
     ButtonComponent,
     UnderLinkComponent,
-    NavBarComponent
+    NavBarComponent,
+    BoardsComponent
   ],
   imports: [
     BrowserModule,

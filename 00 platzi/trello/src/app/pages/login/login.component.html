@@ -1,0 +1,68 @@
+<body class="w-full min-h-screen flex flex-col items-center bg-sgray">
+  <header class="w-full h-[100px] pt-[50px]">
+    <img
+      src="/assets/img/trello.svg"
+      alt="trello"
+      class="h-full m-auto"
+    />
+  </header>
+  <main class="w-full flex-grow flex justify-center items-center py-[50px]">
+    <form
+      action=""
+      class="sm:bg-white sm:rounded-md w-[360px] p-5 sm:shadow-lg flex flex-col sm:border-2 sm:border-gray"
+    >
+      <h1 class="text-center font-bold py-2 text-t-gray">
+        Iniciar Sesión en Trello
+      </h1>
+      <input
+        [(ngModel)]="user_login.email"
+        name="email"
+        type="text"
+        placeholder="Introduzca el correo electronico"
+        class="w-full rounded-md bg-sgray p-2 mt-3 text-center border-2 border-gray shadow-sm hover:shadow-md"
+      />
+      <input
+        [(ngModel)]="user_login.password"
+        name="password"
+        type="text"
+        placeholder="Introduzca la contraseña"
+        class="w-full rounded-md bg-sgray p-2 mt-3 text-center border-2 border-gray shadow-sm hover:shadow-md"
+      />
+      <app-btn>
+      <!-- <p class="text-center text-tgray mt-3">O</p> -->
+      <!-- <app-button *ngFor="let each of social" [data]="each" /> -->
+      <p class="text-center text-tblue cursor-pointer p-1 mt-5">
+        <span class="hover:border-b-2 hover:border-tblue"
+          >¿No puede iniciar sesión?</span
+        >
+      </p>
+      <p class="text-center text-tblue cursor-pointer p-1">
+        <span class="hover:border-b-2 hover:border-tblue"
+          >Regístrese para crear una cuenta</span
+        >
+      </p>
+    </form>
+  </main>
+  <footer class="w-[360px] lg:w-full flex justify-center items-center pb-[20px]">
+    <img
+      src="/assets/img/pic1.svg"
+      alt="left"
+      class="hidden sm:flex w-[200px] p-5 fixed bottom-0 left-0"
+    />
+    <article class="flex flex-wrap flex-col items-center">
+      <img
+      src="/assets/img/atlassian.svg"
+      alt="trello"
+      class="h-[50px] m-auto"
+    />
+    <span class="flex flex-wrap items-center justify-center">
+      <app-under-link *ngFor="let each of links" [data]="each" />
+    </span>
+    </article>
+    <img
+      src="/assets/img/pic2.svg"
+      alt="right"
+      class="hidden sm:flex w-[200px] p-5 fixed bottom-0 right-0"
+    />
+  </footer>
+</body>

@@ -1,0 +1,2 @@
+CREAR UN PORYECTO
+ng new <nombre de la aplicación> --standalone false
